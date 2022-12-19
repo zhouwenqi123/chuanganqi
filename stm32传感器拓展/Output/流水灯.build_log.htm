@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=14HV2-9JGX0-MMB9I-TJJ4N-NI0FW-3052W
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\王俊辉\Desktop\项目测试2\Project\RVMDK（uv5）\BH-STM32.uvprojx
+Project File Date:  12/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'dht11'
+compiling sim900A.c...
+..\..\User\sim900A\sim900A.c(122): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);
+..\..\User\sim900A\sim900A.c(171): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);												//延时等待
+..\..\User\sim900A\sim900A.c(282): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);
+..\..\User\sim900A\sim900A.c(288): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  	Usart_SendString(SIM900A_USART,(char*)Buff, strlen((const char *)Buff));	
+..\..\User\sim900A\sim900A.c(311): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);
+..\..\User\sim900A\sim900A.c(317): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);
+..\..\User\sim900A\sim900A.c(304): warning:  #177-D: variable "dispBuff"  was declared but never referenced
+    unsigned char dispBuff[200];
+..\..\User\sim900A\sim900A.c(348): warning:  #223-D: function "Delay" declared implicitly
+  		Delay(0x0FFFFF);
+..\..\User\sim900A\sim900A.c: 8 warnings, 0 errors
+compiling main.c...
+..\..\User\main.c(165): warning:  #1-D: last line of file ends without a newline
+  } 
+..\..\User\main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=14584 RO-data=321296 RW-data=152 ZI-data=18560  
+FromELF: creating hex file...
+"..\..\Output\流水灯.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  E:\keil\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
